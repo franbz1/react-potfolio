@@ -44,21 +44,33 @@ const Navbar = () => {
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img src={toggle ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain cursor-pointer' onClick={()=> setToggle(!toggle)} />
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient right-0 top-20 absolute mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-          <ul className='list-none felx justify-end items-start flex-col gap-4'>
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? 'text-white' : 'text-secondary'
-              } font-popins font-medium cursor-pointer text-[16px]`}
-              onClick={() => {setToggle(!toggle); setActive(nav.title)}}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
-        </ul>
+          <img
+            src={toggle ? close : menu}
+            alt='menu'
+            className='w-[28px] h-[28px] object-contain cursor-pointer'
+            onClick={() => setToggle(!toggle)}
+          />
+          <div
+            className={`${
+              !toggle ? 'hidden' : 'flex'
+            } p-6 black-gradient right-0 top-20 absolute mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          >
+            <ul className='list-none felx justify-end items-start flex-col gap-4'>
+              {navLinks.map((nav) => (
+                <li
+                  key={nav.id}
+                  className={`${
+                    active === nav.title ? 'text-white' : 'text-secondary'
+                  } font-popins font-medium cursor-pointer text-[16px]`}
+                  onClick={() => {
+                    setToggle(!toggle)
+                    setActive(nav.title)
+                  }}
+                >
+                  <a href={`#${nav.id}`}>{nav.title}</a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
