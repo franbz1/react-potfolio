@@ -50,7 +50,7 @@ const BallCanvas = ({ icon, name }) => {
     <>
       <p className='text-white text-[16px] font-semibold'>{name}</p>
       <Canvas
-        frameloop='demand'
+        frameloop='always'
         dpr={[1, 2]}
         gl={{ preserveDrawingBuffer: true }}
       >
