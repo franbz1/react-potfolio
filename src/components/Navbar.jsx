@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { styles } from '../style'
 import { navLinks } from '../constants'
-import { logo, menu, close } from '../assets'
+import { logo, menu, close, linkedin } from '../assets'
 const Navbar = () => {
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
@@ -30,6 +30,18 @@ const Navbar = () => {
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
+          <li>
+            <a
+              href='https://www.linkedin.com/in/franvz1/'
+              target='_blank'
+            >
+              <img
+                src={linkedin}
+                alt='linkedin'
+                className='text-secondary hover:text-white w-[28px] h-[28px] object-contain cursor-pointer'
+              />
+            </a>
+          </li>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -56,6 +68,18 @@ const Navbar = () => {
             } p-6 black-gradient right-0 top-20 absolute mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none felx justify-end items-start flex-col gap-4'>
+              <li className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'>
+                <a
+                  href='https://www.linkedin.com/in/franvz1/'
+                  target='_blank'
+                >
+                  <img
+                    src={linkedin}
+                    alt='linkedin'
+                    className='w-[28px] h-[28px] object-contain cursor-pointer'
+                  />
+                </a>
+              </li>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}

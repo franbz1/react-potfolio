@@ -9,6 +9,7 @@ import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
 const ProjectCard = ({
+  page_deploy,
   index,
   name,
   description,
@@ -47,7 +48,13 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          {page_deploy ? (
+            <a href={page_deploy} target='_balnk'>
+              <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            </a>
+          ) : (
+            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          )}
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 

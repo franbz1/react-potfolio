@@ -1,219 +1,191 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
+  nextjs,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
+  expressjs,
+  spring,
   meta,
-  starbucks,
-  tesla,
+  warriorsgym,
+  freelancer,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-} from "../assets";
+  geritch,
+  gpt3,
+  springCrud,
+  java,
+} from '../assets'
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: 'about',
+    title: 'About',
   },
   {
-    id: "work",
-    title: "Work",
+    id: 'work',
+    title: 'Work',
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: 'contact',
+    title: 'Contact',
   },
-];
+]
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: 'HTML 5',
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: 'CSS 3',
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: 'TypeScript',
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: 'React JS',
     icon: reactjs,
   },
   {
-    name: "Java SE",
+    name: 'Java SE',
     icon: java,
   },
   {
-    name: "Tailwind CSS",
+    name: 'Tailwind CSS',
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: 'MongoDB',
     icon: mongodb,
   },
   {
-    name: "Nextjs",
+    name: 'Nextjs',
     icon: nextjs,
   },
   {
-    name: "Expressjs",
+    name: 'Expressjs',
     icon: expressjs,
   },
   {
-    name: "Git",
+    name: 'Git',
     icon: git,
   },
   {
-    name: "Spring",
+    name: 'Spring',
     icon: spring,
   },
-];
+]
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: 'Web Developer',
+    company_name: 'WarriorsGym',
+    icon: warriorsgym,
+    iconBg: '#383E56',
+    date: 'March 2020 - April 2021',
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: 'Fullstack Developer',
+    company_name: 'Freelancer',
+    icon: freelancer,
+    iconBg: '#E6DEDD',
+    date: 'Jan 2021 - Feb 2022',
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
+]
 
 const projects = [
   {
-    name: "Car Rent",
+    name: 'Restaurant',
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      'A dynamic and interactive single-page React app. The website features an elegant and modern design that reflects the restaurants atmosphere and menu. The website is fully responsive and optimized for all devices.',
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: 'react',
+        color: 'blue-text-gradient',
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: 'vitejs',
+        color: 'green-text-gradient',
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: 'tailwind',
+        color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    page_deploy: "https://franbz1.github.io/ui-react-2",
+    image: geritch,
+    source_code_link: 'https://github.com/franbz1/ui-react-2',
   },
   {
-    name: "Job IT",
+    name: 'Landing Page GPT-3',
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      'A single-page React app built to showcase ChatGPT-3, an AI-powered chatbot. The landing page features a modern design with a clean layout. The page is fully responsive and optimized for all screen sizes.',
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: 'react',
+        color: 'blue-text-gradient',
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: 'responsive',
+        color: 'green-text-gradient',
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: 'css',
+        color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: gpt3,
+    page_deploy: 'https://franbz1.github.io/ui-react-1/',
+    source_code_link: 'https://github.com/franbz1/ui-react-1',
   },
   {
-    name: "Trip Guide",
+    name: 'Crud in Spring',
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      'This project focused on developing a CRUD system using the Spring framework. The system was designed using an MVC architecture and dependency injection. The project utilized Hibernate and Tomcat, for deployment.',
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: 'java',
+        color: 'blue-text-gradient',
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: 'spring',
+        color: 'green-text-gradient',
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: 'restapi',
+        color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: springCrud,
+    source_code_link: 'https://github.com/franbz1/crud-spring',
   },
-];
+]
 
-export { technologies, experiences, projects };
+export { technologies, experiences, projects }

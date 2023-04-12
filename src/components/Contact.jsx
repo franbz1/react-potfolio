@@ -25,6 +25,11 @@ const Contact = () => {
   const handelSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
+    if (form.email.trim() === '' || form.name.trim() === '' ) {
+      alert('the name and email fields are required');
+      setLoading(false)
+      return;
+    }
     emailjs.send(
       'service_facbrmg',
       'template_rey03c6',
@@ -91,7 +96,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
-              rows='7'
+              rows='5'
               name='message'
               value={form.message}
               onChange={handelChange}
