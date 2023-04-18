@@ -1,24 +1,20 @@
 import React from 'react'
-import { Ipad } from './canvas'
 import { SectionWrapper } from '../hoc'
+import { motion } from 'framer-motion'
+import { textVariant } from '../utils/motion'
+import { Laptop } from './canvas'
+import { styles } from '../style'
 import { technologies } from '../constants'
 const Tech = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {/* {technologies.map((technology) => (
-        <div
-          className='w-28 h-28 flex flex-col justify-center items-center'
-          key={technology.name}
-        >
-          <BallCanvas
-            icon={technology.icon}
-            name={technology.name}
-          />
-        </div>
-      ))} */}
-      <Ipad />
+    <div className='flex w-full h-screen'>
+      <motion.div variants={textVariant}>
+      <p className={styles.sectionSubText}>What I have done so far</p>
+      <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+      </motion.div>
+      <Laptop />
     </div>
   )
 }
 
-export default Tech
+export default SectionWrapper(Tech,'tech')
