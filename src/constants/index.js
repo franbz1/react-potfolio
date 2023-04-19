@@ -40,67 +40,54 @@ const technologies = [
   {
     name: 'HTML 5',
     icon: html,
-    position: [-2,0,2]
   },
   {
     name: 'CSS 3',
     icon: css,
-    position: [-4,0,2]
   },
   {
     name: 'JavaScript',
     icon: javascript,
-    position: [-6,0,2]
   },
   {
     name: 'TypeScript',
     icon: typescript,
-    position: [-8,0,2]
   },
   {
     name: 'React JS',
     icon: reactjs,
-    position: [-10,0,2]
   },
   {
     name: 'Java SE',
     icon: java,
-    position: [-12,0,2]
   },
   {
     name: 'Tailwind CSS',
     icon: tailwind,
-    position: [0,0,2]
   },
   {
     name: 'Node JS',
     icon: nodejs,
-    position: [2,0,2]
   },
   {
     name: 'MongoDB',
     icon: mongodb,
-    position: [4,0,2]
   },
   {
     name: 'Nextjs',
     icon: nextjs,
-    position: [6,0,2]
   },
   {
     name: 'Expressjs',
     icon: expressjs,
-    position: [8,0,2]
   },
   {
     name: 'Git',
     icon: git,
-    position: [10,0,2]
   },
   {
     name: 'Spring',
     icon: spring,
-    position: [12,0,2]
   },
 ]
 

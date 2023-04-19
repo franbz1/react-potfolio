@@ -2,6 +2,7 @@ import * as THREE from 'three'
 import React, { Suspense, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Html, Environment, useGLTF, ContactShadows, OrbitControls } from '@react-three/drei'
+import { LaptopPage } from "../index";
 
 function Model(props) {
   const group = useRef()
@@ -24,10 +25,8 @@ function Model(props) {
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry}>
             {/* Drei's HTML component can "hide behind" canvas geometry */}
-            <Html rotation-x={-Math.PI / 2} position={[0, 0.05, -0.09]} transform occlude>
-              <div style={{height: '200px'}} onPointerDown={(e) => e.stopPropagation()}>
-                <h1 style={{background:'red',height: '200px'}} >hola</h1>
-              </div>
+            <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.09]} transform occlude>
+            <LaptopPage/>
             </Html>
           </mesh>
         </group>
