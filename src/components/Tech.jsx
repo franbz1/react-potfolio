@@ -2,7 +2,7 @@ import React from 'react'
 import { SectionWrapper } from '../hoc'
 import { motion } from 'framer-motion'
 import { textVariant } from '../utils/motion'
-import { Laptop } from './canvas'
+import { Laptop, TechBall } from './canvas'
 import { styles } from '../style'
 const Tech = () => {
   return (
@@ -14,7 +14,7 @@ const Tech = () => {
         </motion.div>
       </div>
       <div className='h-screen'>
-        <Laptop />
+        <TechBall />
       </div>
     </>
   )
