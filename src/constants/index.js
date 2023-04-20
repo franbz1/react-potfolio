@@ -40,54 +40,67 @@ const technologies = [
   {
     name: 'HTML 5',
     icon: html,
+    link: 'https://wikipedia.org/wiki/HTML5'
   },
   {
     name: 'CSS 3',
     icon: css,
+    link: 'https://wikipedia.org/wiki/CSS'
   },
   {
     name: 'JavaScript',
     icon: javascript,
+    link: 'https://wikipedia.org/wiki/JavaScript'
   },
   {
     name: 'TypeScript',
     icon: typescript,
+    link: 'https://wikipedia.org/wiki/TypeScript'
   },
   {
     name: 'React JS',
     icon: reactjs,
+    link: 'https://wikipedia.org/wiki/react_(software)'
   },
   {
     name: 'Java SE',
     icon: java,
+    link: 'https://wikipedia.org/wiki/Java_(programming_language)'
   },
   {
     name: 'Tailwind CSS',
     icon: tailwind,
+    link: 'https://en.wikipedia.org/wiki/Tailwind_CSS'
   },
   {
     name: 'Node JS',
     icon: nodejs,
+    link: 'https://wikipedia.org/wiki/node.js'
   },
   {
     name: 'MongoDB',
     icon: mongodb,
+    link: 'https://wikipedia.org/wiki/mongodb'
   },
   {
     name: 'Nextjs',
     icon: nextjs,
+    link: 'https://wikipedia.org/wiki/next.js'
   },
   {
     name: 'Expressjs',
     icon: expressjs,
+    link: 'https://en.wikipedia.org/wiki/Express.js'
   },
   {
     name: 'Git',
     icon: git,
+    link: 'https://wikipedia.org/wiki/git'
   },
   {
     name: 'Spring',
     icon: spring,
+    link: 'https://wikipedia.org/wiki/spring_framework'
   },
 ]
 

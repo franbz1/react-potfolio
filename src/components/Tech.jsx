@@ -7,14 +7,14 @@ import { styles } from '../style'
 const Tech = () => {
   return (
     <>
-      <div className='flex'>
+    <div className='flex'>
         <motion.div variants={textVariant}>
-          <p className={styles.sectionSubText}>What I have done so far</p>
-          <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+          <p className={styles.sectionSubText}>The technologies I use.</p>
+          <h2 className={styles.sectionHeadText}>My stack.</h2>
         </motion.div>
       </div>
-      <div className='w-auto h-screen'>
-      <Laptop />
+      <div className='h-screen'>
+        <Laptop />
       </div>
     </>
   )
