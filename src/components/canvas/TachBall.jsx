@@ -4,9 +4,10 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { Text, TrackballControls } from '@react-three/drei'
 import { technologies } from '../../constants'
 
-function Word({ children, ...props }) {
+function Word({ index, children, ...props }) {
+  const links = technologies.map((tech) => tech.link)
   const color = new THREE.Color()
-  const fontProps = { font: '/Inter-Bold.woff', fontSize: 2.5, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }
+  const fontProps = { fontSize: 2.5, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }
   const ref = useRef()
   const [hovered, setHovered] = useState(false)
   const over = (e) => (e.stopPropagation(), setHovered(true))
@@ -23,7 +24,9 @@ function Word({ children, ...props }) {
     // Animate font color
     ref.current.material.color.lerp(color.set(hovered ? '#fa2720' : 'white'), 0.1)
   })
-  return <Text ref={ref} onPointerOver={over} onPointerOut={out} onClick={() => console.log('clicked')} {...props} {...fontProps} children={children} />
+  return (
+    <Text ref={ref} onPointerOver={over} onPointerOut={out} onClick={() => window.open(links[index])} {...props} {...fontProps} children={children} />
+  )
 }
 
 function Cloud({ radius = 20 }) {
@@ -41,7 +44,7 @@ function Cloud({ radius = 20 }) {
     }
     return temp
   }, [radius])
-  return words.map(([pos, word], index) => <Word key={index} position={pos} children={word} />)
+  return words.map(([pos, word], index) => <Word index={index} key={index} position={pos} children={word} />)
 }
 
 
