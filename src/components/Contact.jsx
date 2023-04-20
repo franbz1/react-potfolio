@@ -25,36 +25,41 @@ const Contact = () => {
   const handelSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
-    if (form.email.trim() === '' || form.name.trim() === '' ) {
-      alert('the name and email fields are required');
+    if (form.email.trim() === '' || form.name.trim() === '') {
+      alert('the name and email fields are required')
       setLoading(false)
-      return;
+      return
     }
-    emailjs.send(
-      'service_facbrmg',
-      'template_rey03c6',
-      {
-        from_name: form.name,
-        to_name: 'Francisco',
-        from_email: form.email,
-        to_email: 'franciscorualesp15@gmail.com',
-        message: form.message,
-      },
-      '5mM-b9W0BkQHfM6fa'
-    ).then(() => {
-      setLoading(false)
-      alert('thank you. I will get back to you as soon as possible.')
+    emailjs
+      .send(
+        'service_facbrmg',
+        'template_rey03c6',
+        {
+          from_name: form.name,
+          to_name: 'Francisco',
+          from_email: form.email,
+          to_email: 'franciscorualesp15@gmail.com',
+          message: form.message,
+        },
+        '5mM-b9W0BkQHfM6fa'
+      )
+      .then(
+        () => {
+          setLoading(false)
+          alert('thank you. I will get back to you as soon as possible.')
 
-      setForm({
-        name:'',
-        email:'',
-        message:''
-      })
-    }, (error) => {
-      setLoading(false)
-      console.log(error)
-      alert('Something went wrong.')
-    } )
+          setForm({
+            name: '',
+            email: '',
+            message: '',
+          })
+        },
+        (error) => {
+          setLoading(false)
+          console.log(error)
+          alert('Something went wrong.')
+        }
+      )
   }
 
   return (

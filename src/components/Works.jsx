@@ -49,7 +49,10 @@ const ProjectCard = ({
 
         <div className='mt-5'>
           {page_deploy ? (
-            <a href={page_deploy} target='_balnk'>
+            <a
+              href={page_deploy}
+              target='_balnk'
+            >
               <h3 className='text-white font-bold text-[24px]'>{name}</h3>
             </a>
           ) : (
