@@ -49,7 +49,10 @@ const ProjectCard = ({
 
         <div className='mt-5'>
           {page_deploy ? (
-            <a href={page_deploy} target='_balnk'>
+            <a
+              href={page_deploy}
+              target='_balnk'
+            >
               <h3 className='text-white font-bold text-[24px]'>{name}</h3>
             </a>
           ) : (
@@ -86,10 +89,10 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-          assumenda aliquid labore molestiae sunt alias excepturi quaerat harum.
-          Perferendis unde quis porro temporibus, explicabo dolore a odit
-          facilis culpa quisquam?
+          My personal projects section is a sample of my ability to explore new
+          technologies and apply them. Each project is an opportunity to
+          challenge myself and improve my technical skills, while also seeking
+          to solve real-world problems and offer innovative solutions.
         </motion.p>
       </div>
 

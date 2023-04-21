@@ -13,7 +13,7 @@ const TechCard = ({ name, icon, link }) => {
       </div>
       <div>
         <a href={link}>
-          <h3 className='hover:text-secondary' >{name}</h3>
+          <h3 className='hover:text-secondary'>{name}</h3>
         </a>
       </div>
     </div>

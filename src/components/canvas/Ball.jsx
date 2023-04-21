@@ -45,28 +45,28 @@ const BallCanvas = () => {
   return (
     <>
       <Canvas
-        camera={{fov:75}}
+        camera={{ fov: 75 }}
         frameloop='always'
         dpr={[1, 2]}
         gl={{ preserveDrawingBuffer: true }}
       >
-          <ambientLight intensity={0.25} />
-          <directionalLight position={[0, 0, 0.05]} />
-          {technologies.map((technology) => (
-            <Suspense fallback={<CanvasLoader />}>
-              <OrbitControls
-                enablePan={false}
-                enableZoom={false}
-                maxPolarAngle={Math.PI / 2}
-                minPolarAngle={Math.PI / 2}
-              />
-              <Ball
-                name={technology.name}
-                position={technology.position}
-                imgUrl={technology.icon}
-              />
-            </Suspense>
-          ))}
+        <ambientLight intensity={0.25} />
+        <directionalLight position={[0, 0, 0.05]} />
+        {technologies.map((technology) => (
+          <Suspense fallback={<CanvasLoader />}>
+            <OrbitControls
+              enablePan={false}
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+            />
+            <Ball
+              name={technology.name}
+              position={technology.position}
+              imgUrl={technology.icon}
+            />
+          </Suspense>
+        ))}
         <Preload all />
       </Canvas>
     </>

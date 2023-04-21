@@ -107,15 +107,15 @@ const technologies = [
 const experiences = [
   {
     title: 'Web Developer',
-    company_name: 'WarriorsGym',
+    company_name: 'WarriorsGym.co',
     icon: warriorsgym,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: 'Oct 2022 - Dec 2022',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Planned website development, converting mockups into usable web presence with HTML, JavaScript, AJAX and JSON coding',
+      'Coded websites using HTML, CSS, JavaScript and jQuery languages',
+      'Oversaw back-end development using Node.js to maintain website integrity, security and efficiency',
+      'Generated web hosting presence to accommodate specified needs, uploading and maintaining files on account.',
     ],
   },
   {
@@ -123,12 +123,12 @@ const experiences = [
     company_name: 'Freelancer',
     icon: freelancer,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'Jan 2023 - March 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Developing and maintaining web applications as an independent developer.',
+      'Discussed site and app requirements with clients to produce actionable development plans and budgets.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Worked flexible hours; night, weekend, and holiday shifts.',
     ],
   },
 ]
