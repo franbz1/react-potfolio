@@ -28,6 +28,7 @@ const Hero = () => {
               <br className='sm:block hidden' /> Esse error eligendi temporibus
               accusamus neque nihil odio
             </p>
+            <a className='bg-tertiary py-3 px-8 mt-4 outline-none w-fit text-secondary hover:text-white font-bold shadow-md shadow-primary rounded-xl' href='../../public/Miguel_RualesPianda_Resume.pdf' download>Download my CV.</a>
           </div>
         </div>
         <div>
