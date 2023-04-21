@@ -1,12 +1,14 @@
-import * as THREE from 'three'
+import { Suspense } from 'react'
+import { Color, Vector3 } from 'three'
 import { useRef, useState, useMemo, useEffect } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Text, TrackballControls } from '@react-three/drei'
 import { technologies } from '../../constants'
+import CanvasLoader from '../Loader'
 
 function Word({ index, children, ...props }) {
   const links = technologies.map((tech) => tech.link)
-  const color = new THREE.Color()
+  const color = new Color()
   const fontProps = {
     fontSize: 2.5,
     letterSpacing: -0.05,
@@ -55,11 +57,7 @@ function Cloud({ radius = 20 }) {
     for (let i = 0; i < numWords; i++) {
       const phi = Math.acos(-1 + (2 * i) / numWords) // Ángulo phi para la palabra
       const theta = Math.sqrt(numWords * Math.PI) * phi // Ángulo theta para la palabra
-      const position = new THREE.Vector3().setFromSphericalCoords(
-        radius,
-        phi,
-        theta
-      ) // Posición de la palabra en la esfera
+      const position = new Vector3().setFromSphericalCoords(radius, phi, theta) // Posición de la palabra en la esfera
       temp.push([position, palabras[i]]) // Agregar la palabra y su posición al arreglo temp
     }
     return temp
@@ -80,12 +78,14 @@ export default function TechBallCanvas() {
       dpr={[1, 2]}
       camera={{ position: [0, 0, 35], fov: 90 }}
     >
-      <fog
-        attach='fog'
-        args={['#202025', 0, 80]}
-      />
-      <Cloud radius={20} />
-      <TrackballControls />
+      <Suspense fallback={<CanvasLoader />}>
+        <fog
+          attach='fog'
+          args={['#202025', 0, 80]}
+        />
+        <Cloud radius={20} />
+        <TrackballControls />
+      </Suspense>
     </Canvas>
   )
 }

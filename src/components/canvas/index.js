@@ -1,5 +1,5 @@
 import EarthCanvas from "./Earth";
 import TechBall from "./TachBall";
-import StarsCanvas from "./Stars";
+import StarsCanvasv2 from "./Starsv2";
 
-export { EarthCanvas, StarsCanvas, TechBall };
+export { EarthCanvas, TechBall, StarsCanvasv2 };
