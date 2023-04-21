@@ -1,6 +1,4 @@
-import { motion } from 'framer-motion'
 import { styles } from '../style'
-import { ComputersCanvas } from './canvas'
 import { github } from '../assets'
 import React from 'react'
 
